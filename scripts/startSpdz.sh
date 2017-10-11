@@ -25,6 +25,6 @@ base_port=13000
 internal_port=$(($base_port + $player_id))
 client_port=$((14000 + $player_id))
 
-docker run -d --rm --name $container_name --expose $internal_port -p $internal_port:$internal_port --expose $client_port -p $client_port:$client_port --env playerId=$player_id --env mpcPgm=$spdz_pgm --env basePort=$base_port -v /Users/je0018/temp/Player-Data:/usr/spdz/Player-Data -v /Users/je0018/temp/logs:/usr/spdz/logs -v /Users/je0018/temp/HOSTS.config:/usr/spdz/HOSTS.config --network=compose_spdz_nw spdz/analytics:v0.1.0
+docker run -d --rm --name $container_name --expose $internal_port -p $internal_port:$internal_port --expose $client_port -p $client_port:$client_port --env playerId=$player_id --env mpcPgm=$spdz_pgm --env basePort=$base_port -v /Users/je0018/temp/Player-Data:/usr/spdz/Player-Data -v /Users/je0018/temp/logs:/usr/spdz/logs -v /Users/je0018/temp/HOSTS.config:/usr/spdz/HOSTS.config --network=compose_spdz_nw spdz/analytics:v0.1.1
 
 exit $?

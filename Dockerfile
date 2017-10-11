@@ -3,7 +3,7 @@ FROM spdz/spdz:v0.4.1-analytics-engine
 # Compile the analytics mpc programs into a container and setup to be able to start a selected program.
 # Note this version of SPDZ does not rely on the server.x coordination startup program.
 # Build container with:
-#   docker build -f Dockerfile-analytics -t spdz/analytics:va.b.c .
+#   docker build -t spdz/analytics:va.b.c .
 # Run container with:
 #   docker run -d --rm --name spdz-analytics-<playerId> --expose 13000 -p 13000:13000 
 #          --expose 14000 -p 14000:14000 --env playerId=0 --env basePort=13000 
