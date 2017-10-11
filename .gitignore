@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Visual Studio Code
+.vscode
+typings
+typings.json
+jsconfig.json
+
+# Mac droppings
+**/.DS_Store
+
+# SPDZ run time files
+spdz/Programs/Bytecode/*
+spdz/Programs/Schedules/*
+spdz/Programs/Public-Input/*
+spdz/Player-Data
+
+# Temp scratchpad experimental files
+scratchpad.*
